@@ -1,1 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: #333;
+}
+
+#patient-info {
+  margin-bottom: 40px;
+}
+
+#patient-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#blood-pressure {
+  font-size: 18px;
+  color: #e74c3c;
+}
+
+canvas {
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  display: block;
+}
 
