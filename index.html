@@ -1,17 +1,33 @@
-<canvas id="bp-chart"></canvas>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-  const ctx = document.getElementById('bp-chart').getContext('2d');
-  const bpChart = new Chart(ctx, {
-    type: 'line',
-    data: {
-      labels: ['2019', '2020', '2021', '2022'], // Example years
-      datasets: [{
-        label: 'Blood Pressure',
-        data: [120, 125, 130, 128], // Example data
-        borderColor: 'rgba(75, 192, 192, 1)',
-        fill: false,
-      }]
-    },
-  });
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Data</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Patient Data</h1>
+    </header>
+
+    <main>
+      <!-- Patient Information -->
+      <section id="patient-info">
+        <h2 id="patient-name"></h2>
+        <p>Age: <span id="patient-age"></span></p>
+        <p>Blood Pressure: <span id="blood-pressure"></span></p>
+      </section>
+
+      <!-- Blood Pressure Chart -->
+      <section id="patient-chart">
+        <canvas id="bp-chart"></canvas>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
